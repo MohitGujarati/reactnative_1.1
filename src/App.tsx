@@ -6,6 +6,11 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+//Tab navigation
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+const Tab = createBottomTabNavigator();
+
 import HomeScreen from './screens/Home';
 import DetailsScreen from './screens/Details'
 import LoginScreen from './screens/Login'
@@ -46,6 +51,7 @@ function App(): JSX.Element {
         />
       </Stack.Navigator>
     </NavigationContainer>
+    
   );
 }
 
